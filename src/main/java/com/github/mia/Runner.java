@@ -25,7 +25,7 @@ public class Runner {
         System.out.println("Do you want to run with example input [y/n] ?");
         boolean testrun = "y".equalsIgnoreCase(scanner.next());
 
-        System.out.println(String.format("Solving day %d of aoc 3%d", day, year));
+        System.out.println(String.format("Solving day %d of aoc %d", day, year));
 
         List<String> input = readFile(year, day, testrun);
         Solvable solver = getSolver(year, day);
